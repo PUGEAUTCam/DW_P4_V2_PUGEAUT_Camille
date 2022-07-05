@@ -85,7 +85,7 @@ a:hover {
     background: top no-repeat;
 }
 
-/* .bloc-bg-texture::before {
+.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -93,12 +93,12 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-} */
+} 
 
-/* .texture-paper::before {
+.texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-} */
+}
 
 .b-parallax {
     background-attachment: fixed;
@@ -292,6 +292,12 @@ a:hover {
     font-size: 36px;
 }
 
+@media (max-width: 768px) {
+         #bloc-1-hero h1 {
+                  font-size: 25px;
+         }
+}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -330,7 +336,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -482,6 +488,12 @@ button {
 
 .icon-md {
     font-size: 48px!important;
+}
+
+@media (max-width: 768px){
+         .icon-md{
+                  font-size: 33px!important;
+         }
 }
 
 .icon-lg {
@@ -686,7 +698,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto auto auto auto;
 }
 
@@ -869,7 +881,7 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
     .b-parallax {
         background-attachment: scroll;
