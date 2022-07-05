@@ -2,28 +2,22 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
     <meta name="description" content="Agence La Panthère. Entreprise de web design basée à Lyon qui aide les entreprises à gagner en attractivité et visibilité sur Internet. 
     Contactez nous ! Et construisons ensemble une stratégie pour vos futurs projets, avec l’aide des meilleurs développeurs et designers de la région.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#317EFB"/>
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="google-site-verification" content="P4vt7yZjFRVojIPkx_41eBz6rHWmC-hEJUqX7Qq30_8" />
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
-<!--     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
          
     <title>Agence La Panthère- Entreprise de web design a Lyon- Contact </title>
 
-    
+
 </head>
 <body>
 <!-- Principal conteneur -->
@@ -32,16 +26,28 @@
          <!-- header -->
          <header class="bloc bgc-white l-bloc " id="bloc-0">
                   <div class="container bloc-sm">
+
                            <nav class="navbar row">
                                     <div class="navbar-header">
-                                             <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthere, meilleure entreprise de web design a Lyon" height="40" /></a>
+                                             <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo et slogan de l'agence La Panthere, meilleure entreprise de web design a Lyon" height="40" /></a>
                                              <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
                                                       <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                                              </button>
                                     </div>
+                                    <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+                                             <ul class="site-navigation nav navbar-nav">
+                                                      <li>
+                                                               <a href="index.html">Accueil</a>
+                                                      </li>
+                                                      <li>
+                                                               <a href="contact.html">Contact</a>
+                                                      </li>
+                                             </ul>
+                                    </div>
                            </nav>
                   </div>
          </header>
+
          <!-- bloc-0 END -->
 
          <!-- bloc-6 -->
@@ -67,11 +73,11 @@
                   <div class="container bloc-lg">
                            <div class="row">
                                     <div class="col-sm-6">
-                                             <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                                             <form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                                                       <div class="form-group">
                                                                <label>
                                                                         Nom
-                                                                        <input id="name" class="form-control" required />
+                                                                        <input id="name" type="text" class="form-control" required />
                                                                </label>
                                                       </div>
                                                       <div class="form-group">
@@ -84,13 +90,13 @@
                                                                <label>
                                                                         Comment nous avez-vous connu ?
                                                                
-                                                                        <input class="form-control" type="email" required id="input_504" />
+                                                                        <input class="form-control" type="text" required id="input_504" />
                                                                </label>
                                                       </div>
                                                       <div class="form-group">
                                                                <label>
                                                                         Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-                                                                        <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                                                                        <textarea id="message" class="form-control" type="text" rows="4" cols="50" required></textarea>
                                                                </label>
                                                       </div> 
                                                       <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
@@ -109,6 +115,9 @@
          <!-- bloc-7 END -->
 
          <!-- Footer - bloc-8 -->
+
+
+
          <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
                   <div class="container bloc-sm">
                            <div class="row">
@@ -116,15 +125,45 @@
                                              <p class="text-center white">
                                                       Agence La Panthère - Agence web basée à Lyon.<br>
                                              </p>
+                                             <div class="row row-no-gutters social">
+                                                      <div class="col-sm-3">
+                                                               <div class="text-center">
+                                                                        <a class="social" aria-label="Twitter"  href="www.twiter.com"><span class="fa fa-twitter icon-md"></span></a>
+                                                               </div>
+                                                      </div>
+                                                      <div class="col-sm-3">
+                                                               <div class="text-center">
+                                                                        <a class="social" aria-label="Facebook" href="www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+                                                               </div>
+                                                      </div>
+                                                      <div class="col-sm-3">
+                                                               <div class="text-center">
+                                                                        <a class="social" aria-label="Dribbble" href="www.dribble.com"><span class="fa fa-dribbble icon-md"></span></a>
+                                                               </div>
+                                                      </div>
+                                                      <div class="col-sm-3">
+                                                               <div class="text-center">
+                                                                        <a class="social" aria-label="instagram" href="www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+                                                               </div>
+                                                      </div>
+                                             </div>
+                                             
                                     </div>
                            </div>
                   </div>
          </footer>
+
          <!-- Footer - bloc-8 END -->
 
 </div>
 <!-- Principal conteneur END -->
     
+
+<!-- <script src="./js/jquery-2.1.0.js"></script> --> --> -->
+<script src="./js/bootstrap.js"></script>
+<script src="./js/blocs.js"></script>
+<script src="./js/jquery.touchSwipe.js" defer></script>
+<!-- <script src="./js/gmaps.js"></script>  -->
 
 </body>
 </html>
